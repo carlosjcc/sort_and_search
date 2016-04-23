@@ -1,0 +1,28 @@
+Further improvement needed to nor depend on cs50 library
+
+and to improve binary search with pointers
+
+
+Selection Sort
+
+    Pseudo code
+
+    for i = 1 to n - 1
+        min = i
+        for j = i + 1 to n
+            if array[j] < array[min]
+                min = j
+        if min != i
+            swap array[min] and array[i]
+
+Insertion Sort
+
+    Pseudo code
+
+    for i = 1 to n - 1
+        element = array[i]
+        j = i
+        while(j > 0 and array[j - i] > element)
+            array[j] = array[j - 1]
+            j = j - 1
+        array[j] = element
